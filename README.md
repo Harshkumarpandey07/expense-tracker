@@ -23,28 +23,4 @@ A full-stack expense tracking application built with React, Node.js, Express, an
 | Deployment | Render (Frontend + Backend) |
 | Version Control | Git, GitHub |
 
-## 📁 Project Structure
 
-expense-tracker/
-├── client/                    # React frontend
-│   └── src/
-│       ├── components/        # Reusable UI components
-│       │   ├── ExpenseForm.js
-│       │   ├── ExpenseList.js
-│       │   ├── ExpenseSummary.js
-│       │   └── ChartComponent.js
-│       ├── pages/             # Page level views
-│       │   └── HomePage.js
-│       ├── services/          # API call functions
-│       │   └── expenseService.js
-│       ├── utils/             # Helper functions
-│       │   └── formatCurrency.js
-│       └── assets/            # Images and styles
-└── server/                    # Node.js backend
-├── controllers/           # Business logic
-│   └── expenseController.js
-├── models/                # MongoDB schemas
-│   └── Expense.js
-├── routes/                # API route definitions
-│   └── expenseRoutes.js
-└── index.js               # Server entry point
