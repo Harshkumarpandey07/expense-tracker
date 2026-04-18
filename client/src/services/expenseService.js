@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for the expense API
-const API_URL = 'http://localhost:5000/api/expenses';
+const API_URL = 'https://expense-tracker-p576.onrender.com/api/expenses';
 
 /**
  * Fetches all expenses with optional filters
