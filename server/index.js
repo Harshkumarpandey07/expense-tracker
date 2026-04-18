@@ -9,8 +9,11 @@ const expenseRoutes = require('./routes/expenseRoutes');
 
 const app = express();
 
-// Middleware
-app.use(cors());
+// Allow requests from frontend
+app.use(cors({
+  origin: 'https://expense-tracker-frontend-sffp.onrender.com'
+}));
+
 app.use(express.json());
 
 // Routes
@@ -18,7 +21,6 @@ app.use('/api/expenses', expenseRoutes);
 
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
-
 
 /**
  * Connects to MongoDB Atlas and starts the Express server
